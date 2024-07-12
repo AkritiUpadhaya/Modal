@@ -26,7 +26,7 @@ body{
     background-color: #fff;
     color: black;
 }
-.modal-container{
+.modal{
     display: flex;
     background-color: #fff;
     /* display: inline-block; */
@@ -34,7 +34,7 @@ body{
     width: 100px;
     justify-content: space-between;
     align-items: center;
-    font-size: 2em;
+    font-size: 1em;
     /* text-align: center; */
     /* height: 80px; */
     /* box-shadow: 10px 10px 5px 2px; */
@@ -44,15 +44,14 @@ body{
     transform: translate(-50%,-50%);
     animation-name: animatemodal;
     animation-duration: .4s;
-    display: none;
+    
 }
-.modal-container #modal{
-    border: 0px;
-    /* padding-right: 4px; */
-    /* margin-bottom: 4px; */
+.modal-container{
+    display: none;
 }
 .close-btn{
     /* display: inline; */
     color: red;
     cursor: pointer;
+    font-size: 2em;
 }
