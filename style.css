@@ -35,9 +35,6 @@ body{
     justify-content: space-between;
     align-items: center;
     font-size: 1em;
-    /* text-align: center; */
-    /* height: 80px; */
-    /* box-shadow: 10px 10px 5px 2px; */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -48,10 +45,19 @@ body{
 }
 .modal-container{
     display: none;
+    z-index: 1;
+    /* background-color: rgba(0, 0, 0, 0.1); */
 }
 .close-btn{
-    /* display: inline; */
     color: red;
     cursor: pointer;
     font-size: 2em;
+}
+@keyframes animatemodal{
+    from{
+        top: -300px;
+    }
+    to{
+        top: 50%;
+    }
 }
